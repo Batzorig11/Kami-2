@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>6-р хичээл: Хоёр дахь хэсэг — давталтыг мэдрэх — Царцаа Намжил</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<aside class="sidebar" id="sidebar">
+  <div class="brand">
+    <div class="brand-icon">🦗</div>
+    <div>
+      <div class="brand-title">Царцаа Намжил</div>
+      <div class="brand-sub">Python сургалт</div>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-home">🏠 Нүүр хуудас</a><div class="nav-section">Хичээлүүд</div><a href="lesson-1.html" class="nav-lesson"><span class="nav-num">1</span><span class="nav-title">Python-той танилцах</span></a><a href="lesson-2.html" class="nav-lesson"><span class="nav-num">2</span><span class="nav-title">Хувьсагч ба оролт</span></a><a href="lesson-3.html" class="nav-lesson"><span class="nav-num">3</span><span class="nav-title">Шийдвэр гаргах (if / elif / else)</span></a><a href="lesson-4.html" class="nav-lesson"><span class="nav-num">4</span><span class="nav-title">Логик утга ба ЭХНИЙ хэсэг</span></a><a href="lesson-5.html" class="nav-lesson"><span class="nav-num">5</span><span class="nav-title">while давталт — оролтыг шалгах</span></a><a href="lesson-6.html" class="nav-lesson active"><span class="nav-num">6</span><span class="nav-title">Хоёр дахь хэсэг — давталтыг мэдрэх</span></a><a href="lesson-7.html" class="nav-lesson"><span class="nav-num">7</span><span class="nav-title">Функц — давталтыг багцлах</span></a><a href="lesson-8.html" class="nav-lesson"><span class="nav-num">8</span><span class="nav-title">Параметр ба буцаах утга (return)</span></a><a href="lesson-9.html" class="nav-lesson"><span class="nav-num">9</span><span class="nav-title">Жагсаалт (list) ба for давталт</span></a><a href="lesson-10.html" class="nav-lesson"><span class="nav-num">10</span><span class="nav-title">Толь бичиг (dict)</span></a><a href="lesson-11.html" class="nav-lesson"><span class="nav-num">11</span><span class="nav-title">ЕРӨНХИЙ ХӨДӨЛГҮҮР — play_scene() <span class="peak-dot" title="Хүндрэлийн оргил">⭐</span></span></a><a href="lesson-12.html" class="nav-lesson"><span class="nav-num">12</span><span class="nav-title">SCENES жагсаалт + main давталт</span></a><a href="lesson-13.html" class="nav-lesson"><span class="nav-num">13</span><span class="nav-title">Толгой самбар + сурсан тарниуд (5–6 хэсэг)</span></a><a href="lesson-14.html" class="nav-lesson"><span class="nav-num">14</span><span class="nav-title">Шөнийн оньсого (7–9 хэсэг) <span class="peak-dot" title="Хүндрэлийн оргил">⭐</span></span></a><a href="lesson-15.html" class="nav-lesson"><span class="nav-num">15</span><span class="nav-title">Төгсгөлийн хэсгүүд (10–12) + дэлгэцүүд</span></a><a href="lesson-16.html" class="nav-lesson"><span class="nav-num">16</span><span class="nav-title">Бүрэн туршилт, алдаа засах, ТОГЛООМЫН ӨДӨР</span></a>
+  </nav>
+</aside>
+<main class="content">
+<header class="topbar">
+  <button class="menu-btn" onclick="document.getElementById('sidebar').classList.toggle('open')" aria-label="Цэс">☰</button>
+  <div class="crumb"><a href="index.html">Нүүр</a> › 6-р хичээл</div>
+</header>
+<div class="page">
+<div class="lesson-hero">
+  <div class="lesson-eyebrow">6-р хичээл / 16 </div>
+  <h1>Хоёр дахь хэсэг — давталтыг мэдрэх</h1>
+</div>
+<section class="callout goal">
+  <div class="callout-label">🎯 Зорилго</div>
+  <p>Хар шувууны хэсгийг (2-р) гараар нэмж, <b>код давтагдаж байгааг анзаарах</b>.</p>
+</section>
+<section class="card">
+  <h2>📘 Шинэ ойлголт</h2>
+  <p>Шинэ ойлголт байхгүй — мэдсэнээ бататгах. Гол сурвалж: «Ижил кодыг дахин дахин бичих уйтгартай юм байна».</p>
+</section>
+<section class="card">
+  <h2>💡 Тайлбар</h2>
+  <p>Өнөөдөр шинэ синтакс байхгүй. Бид Хийдийн хэсгийн дараа Хар шувууны хэсгийг <b>яг адил бүтцээр</b> бичнэ. Зорилго нь нэг чухал зүйлийг анзаарах: хоёр хэсгийн ялгаа нь зөвхөн <b>текст</b>, бүтэц нь яг адил. «Ижил кодыг дахин дахин бичих уйтгартай юм байна» гэдэг мэдрэмж нь хожмын функц, толь бичгийн хичээлүүдэд гарах гол түлхэц болно.</p>
+</section>
+<section class="card">
+  <h2>✍️ Дасгал (хичээл дээр)</h2>
+  <ol class="exercises"><li>Хийдийн хэсгийн дараа Хар шувууны хэсгийг яг адил бүтцээр бичих.</li><li>Хоёр хэсгийг дараалуулан ажиллуулах.</li><li>Хоёр хэсгийн <b>ялгаа нь зөвхөн текст</b> гэдгийг тэмдэглэх (багш онцолно).</li></ol>
+</section>
+<section class="card">
+  <h2>💻 Гарах код — <code>namjil.py</code></h2>
+  <div class="codecard">
+  <div class="code-head">
+    <span class="code-file">namjil.py</span>
+    <button class="copy-btn" onclick="copyCode(this)">Хуулах</button>
+  </div>
+  <pre class="code-body"><code><span class="c-com"># --- 1-р хэсэг: Хийдэд ---</span>
+<span class="c-fn">print</span>(<span class="c-str">&quot;=== Хийдэд ===&quot;</span>)
+<span class="c-com"># ... (4-р хичээлийн код)</span>
+
+<span class="c-com"># --- 2-р хэсэг: Хар шувуу ---</span>
+<span class="c-fn">print</span>(<span class="c-str">&quot;=== Хар шувуу ===&quot;</span>)
+<span class="c-fn">print</span>(<span class="c-str">&quot;[1] «Бараан шувуу вааг вааг» гэж тогтоох&quot;</span>)
+<span class="c-fn">print</span>(<span class="c-str">&quot;[2] Чулуу шидэх&quot;</span>)
+choice = <span class="c-fn">input</span>(<span class="c-str">&quot;Сонголтоо бич: &quot;</span>)
+<span class="c-kw">if</span> choice == <span class="c-str">&quot;1&quot;</span>:
+    <span class="c-fn">print</span>(<span class="c-str">&quot;Чи тогтоож авлаа. (амьд)&quot;</span>)
+<span class="c-kw">else</span>:
+    <span class="c-fn">print</span>(<span class="c-str">&quot;Шувуу нисэв. (үхэл)&quot;</span>)</code></pre>
+</div>
+</section>
+<section class="callout nocomp">
+  <div class="callout-label">📝 Компьютергүй сурагчид</div>
+  <p>Хоёр хэсгийн кодыг цаасан дээр зэрэгцүүлэн тавьж, <b>ижил хэсгийг</b> өнгөт балаар тэмдэглэх. «Үүнийг хялбарчилж болох болов уу?» гэж бодуулах.</p>
+</section>
+<section class="callout recap">
+  <div class="callout-label">✅ Дүгнэлт — өнөөдөр юу сурсан</div>
+  <p>Хоёр хэсэг = ижил бүтэц, өөр текст. Давталт уйтгартай → удахгүй функц, толь бичгээр энэ давталтыг устгана.</p>
+</section>
+<nav class="pager-row"><a class="pager prev" href="lesson-5.html"><span class="pager-dir">← Өмнөх</span><span class="pager-name">5. while давталт — оролтыг шалгах</span></a><a class="pager next" href="lesson-7.html"><span class="pager-dir">Дараах →</span><span class="pager-name">7. Функц — давталтыг багцлах</span></a></nav>
+</div></main>
+<script>
+function copyCode(btn){
+  const code = btn.closest('.codecard').querySelector('code').innerText;
+  navigator.clipboard.writeText(code).then(function(){
+    const old = btn.textContent;
+    btn.textContent = 'Хуулсан ✓';
+    btn.classList.add('copied');
+    setTimeout(function(){ btn.textContent = old; btn.classList.remove('copied'); }, 1500);
+  });
+}
+// Цэс гадна дарвал хаах (мобайл)
+document.addEventListener('click', function(e){
+  const sb = document.getElementById('sidebar');
+  if(!sb) return;
+  if(window.innerWidth <= 900 && sb.classList.contains('open')){
+    if(!sb.contains(e.target) && !e.target.classList.contains('menu-btn')){
+      sb.classList.remove('open');
+    }
+  }
+});
+</script>
+</body></html>

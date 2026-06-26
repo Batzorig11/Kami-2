@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Царцаа Намжил — Python сургалт</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<aside class="sidebar" id="sidebar">
+  <div class="brand">
+    <div class="brand-icon">🦗</div>
+    <div>
+      <div class="brand-title">Царцаа Намжил</div>
+      <div class="brand-sub">Python сургалт</div>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-home active">🏠 Нүүр хуудас</a><div class="nav-section">Хичээлүүд</div><a href="lesson-1.html" class="nav-lesson"><span class="nav-num">1</span><span class="nav-title">Python-той танилцах</span></a><a href="lesson-2.html" class="nav-lesson"><span class="nav-num">2</span><span class="nav-title">Хувьсагч ба оролт</span></a><a href="lesson-3.html" class="nav-lesson"><span class="nav-num">3</span><span class="nav-title">Шийдвэр гаргах (if / elif / else)</span></a><a href="lesson-4.html" class="nav-lesson"><span class="nav-num">4</span><span class="nav-title">Логик утга ба ЭХНИЙ хэсэг</span></a><a href="lesson-5.html" class="nav-lesson"><span class="nav-num">5</span><span class="nav-title">while давталт — оролтыг шалгах</span></a><a href="lesson-6.html" class="nav-lesson"><span class="nav-num">6</span><span class="nav-title">Хоёр дахь хэсэг — давталтыг мэдрэх</span></a><a href="lesson-7.html" class="nav-lesson"><span class="nav-num">7</span><span class="nav-title">Функц — давталтыг багцлах</span></a><a href="lesson-8.html" class="nav-lesson"><span class="nav-num">8</span><span class="nav-title">Параметр ба буцаах утга (return)</span></a><a href="lesson-9.html" class="nav-lesson"><span class="nav-num">9</span><span class="nav-title">Жагсаалт (list) ба for давталт</span></a><a href="lesson-10.html" class="nav-lesson"><span class="nav-num">10</span><span class="nav-title">Толь бичиг (dict)</span></a><a href="lesson-11.html" class="nav-lesson"><span class="nav-num">11</span><span class="nav-title">ЕРӨНХИЙ ХӨДӨЛГҮҮР — play_scene() <span class="peak-dot" title="Хүндрэлийн оргил">⭐</span></span></a><a href="lesson-12.html" class="nav-lesson"><span class="nav-num">12</span><span class="nav-title">SCENES жагсаалт + main давталт</span></a><a href="lesson-13.html" class="nav-lesson"><span class="nav-num">13</span><span class="nav-title">Толгой самбар + сурсан тарниуд (5–6 хэсэг)</span></a><a href="lesson-14.html" class="nav-lesson"><span class="nav-num">14</span><span class="nav-title">Шөнийн оньсого (7–9 хэсэг) <span class="peak-dot" title="Хүндрэлийн оргил">⭐</span></span></a><a href="lesson-15.html" class="nav-lesson"><span class="nav-num">15</span><span class="nav-title">Төгсгөлийн хэсгүүд (10–12) + дэлгэцүүд</span></a><a href="lesson-16.html" class="nav-lesson"><span class="nav-num">16</span><span class="nav-title">Бүрэн туршилт, алдаа засах, ТОГЛООМЫН ӨДӨР</span></a>
+  </nav>
+</aside>
+<main class="content">
+<header class="topbar">
+  <button class="menu-btn" onclick="document.getElementById('sidebar').classList.toggle('open')" aria-label="Цэс">☰</button>
+  <div class="crumb">Нүүр хуудас</div>
+</header>
+<div class="page">
+<div class="home-hero">
+  <div class="home-hero-icon">🦗</div>
+  <h1>Царцаа Намжил — Python сургалт</h1>
+  <p class="home-hero-sub">16 хичээлээр терминалын тоглоом бүтээж сурах нь</p>
+</div>
+<section class="card facts">
+  <div class="fact"><span class="fact-k">👧 Зорилтот суралцагч</span><span class="fact-v">Python болон алгоритмын анхан шатны ойлголттой хүүхдүүд</span></div>
+  <div class="fact"><span class="fact-k">⏱️ Хугацаа</span><span class="fact-v">16 хичээл × 80 минут (нийт ~21 цаг)</span></div>
+  <div class="fact"><span class="fact-k">🎮 Эцсийн бүтээгдэхүүн</span><span class="fact-v">toolbox.py (багшаас бэлэн) + namjil.py (сурагчдын бичих) — терминал дээр тоглодог сонголтот үлгэрийн тоглоом</span></div>
+  <div class="fact"><span class="fact-k">🏠 Гэрийн даалгавар</span><span class="fact-v">ҮГҮЙ. Зарим сурагчид гэртээ компьютергүй тул бүх дасгалыг хичээл дээр гүйцэтгэнэ.</span></div>
+</section>
+<section class="card">
+  <h2>📖 Энэ сайтыг хэрхэн ашиглах вэ?</h2>
+  <p><b>Багш нар:</b> хичээл бүрийн хуудсыг проектор дээр гарган ангид тайлбарлах, дасгал
+  өгөх материал болгон ашиглана. Хичээл бүрд зорилго, шинэ ойлголт, дасгал, гарах код,
+  багшид зориулсан зөвлөмж, компьютергүй сурагчдад зориулсан үйл ажиллагаа, дүгнэлт байгаа.</p>
+  <p><b>Бие даан суралцагч:</b> 1-р хичээлээс эхлэн дараалан уншиж, «Тайлбар» хэсгийг анхааралтай
+  уншаад «Дасгал»-ыг өөрөө бичиж туршина. Доорх кодыг «Хуулах» товчоор хуулж аваад ажиллуулж болно.</p>
+</section>
+<section class="card">
+  <h2>🗂️ 16 хичээл</h2>
+  <div class="lesson-grid"><a class="lesson-grid-card" href="lesson-1.html"><div class="grid-num">1</div><div class="grid-title">Python-той танилцах</div></a><a class="lesson-grid-card" href="lesson-2.html"><div class="grid-num">2</div><div class="grid-title">Хувьсагч ба оролт</div></a><a class="lesson-grid-card" href="lesson-3.html"><div class="grid-num">3</div><div class="grid-title">Шийдвэр гаргах (if / elif / else)</div></a><a class="lesson-grid-card" href="lesson-4.html"><div class="grid-num">4</div><div class="grid-title">Логик утга ба ЭХНИЙ хэсэг</div></a><a class="lesson-grid-card" href="lesson-5.html"><div class="grid-num">5</div><div class="grid-title">while давталт — оролтыг шалгах</div></a><a class="lesson-grid-card" href="lesson-6.html"><div class="grid-num">6</div><div class="grid-title">Хоёр дахь хэсэг — давталтыг мэдрэх</div></a><a class="lesson-grid-card" href="lesson-7.html"><div class="grid-num">7</div><div class="grid-title">Функц — давталтыг багцлах</div></a><a class="lesson-grid-card" href="lesson-8.html"><div class="grid-num">8</div><div class="grid-title">Параметр ба буцаах утга (return)</div></a><a class="lesson-grid-card" href="lesson-9.html"><div class="grid-num">9</div><div class="grid-title">Жагсаалт (list) ба for давталт</div></a><a class="lesson-grid-card" href="lesson-10.html"><div class="grid-num">10</div><div class="grid-title">Толь бичиг (dict)</div></a><a class="lesson-grid-card" href="lesson-11.html"><div class="grid-num">11<span class="grid-peak">⭐</span></div><div class="grid-title">ЕРӨНХИЙ ХӨДӨЛГҮҮР — play_scene()</div></a><a class="lesson-grid-card" href="lesson-12.html"><div class="grid-num">12</div><div class="grid-title">SCENES жагсаалт + main давталт</div></a><a class="lesson-grid-card" href="lesson-13.html"><div class="grid-num">13</div><div class="grid-title">Толгой самбар + сурсан тарниуд (5–6 хэсэг)</div></a><a class="lesson-grid-card" href="lesson-14.html"><div class="grid-num">14<span class="grid-peak">⭐</span></div><div class="grid-title">Шөнийн оньсого (7–9 хэсэг)</div></a><a class="lesson-grid-card" href="lesson-15.html"><div class="grid-num">15</div><div class="grid-title">Төгсгөлийн хэсгүүд (10–12) + дэлгэцүүд</div></a><a class="lesson-grid-card" href="lesson-16.html"><div class="grid-num">16</div><div class="grid-title">Бүрэн туршилт, алдаа засах, ТОГЛООМЫН ӨДӨР</div></a></div>
+</section>
+<section class="card">
+  <h2>🧭 Багшид зориулсан үндсэн зарчим</h2>
+  <div class="principle"><div class="principle-num">1</div><div><b>Бэлэн «хэрэгслийн хайрцаг» (toolbox)</b><p>Өнгө, хүрээ, бичгийн машины эффект зэрэг <b>хэцүү</b> функцийг сурагчид өөрсдөө бичихгүй — зүгээр л <code>toolbox.py</code>-аас дуудаж хэрэглэнэ (яг <code>print()</code> шиг). Эдгээрийг 7-р хичээлд танилцуулна.</p></div></div><div class="principle"><div class="principle-num">2</div><div><b>Эхлээд тодорхой, сүүлд хийсвэр</b><p>Сурагчид эхэндээ хэдэн хэсгийг <code>if/elif/else</code>-ээр <b>гараар, давтан</b> бичнэ. Давталт уйтгартай болсон хойно (11-р хичээл) бид нэг ерөнхий <code>play_scene()</code> функц бичиж бүх давталтыг устгана — энэ нь функц/толь бичгийн <b>ач холбогдлыг мэдрүүлэх</b> гол мөч.</p></div></div><div class="principle"><div class="principle-num">3</div><div><b>Хүндрэлийн оргилууд</b><p>11-р хичээл (хийсвэрлэл) ба 14-р хичээл (шөнийн тоо тааруулах логик). Эдгээрт нэмэлт цаг, тусламж нөөцлөнө.</p></div></div>
+</section>
+<section class="card">
+  <h2>⏲️ 80 минутын ердийн бүтэц</h2>
+  <table class="tbl"><thead><tr><th>Хугацаа</th><th>Үе шат</th></tr></thead><tbody><tr><td class="t-time">10 мин</td><td>Сэргээх / халаалт (өмнөх хичээлийг эргэн санах)</td></tr><tr><td class="t-time">20 мин</td><td>Шинэ ойлголт — багшийн тайлбар + жишээ</td></tr><tr><td class="t-time">35 мин</td><td>Удирдамжтай дасгал — хамт код бичих</td></tr><tr><td class="t-time">10 мин</td><td>Туршиж тоглох / гаралтаа хуваалцах</td></tr><tr><td class="t-time">5 мин</td><td>Дүгнэлт — өнөөдөр юу сурсан</td></tr></tbody></table>
+</section>
+<section class="callout nocomp">
+  <div class="callout-label">📝 Компьютергүй сурагчдад зориулсан ерөнхий зөвлөмж</div>
+  <ul class="tips"><li><b>Хосоор ажиллах (pair programming).</b> Нэг компьютерт 2 сурагч. Нэг нь «жолооч» (бичнэ), нөгөө нь «навигатор» (унших, алдаа хайх). 20 минут тутамд үүрэг солино.</li><li><b>Цаасан код.</b> Кодыг цаасан/самбар дээр бичих, гараар «ажиллуулж» (trace) гаралтыг таамаглах.</li><li><b>Дүрд тоглох.</b> Үлгэрийн хэсгүүдийг ангид жүжиглэн тоглож, сонголт-үр дагаврыг биеэр мэдрэх.</li></ul>
+</section>
+<section class="card">
+  <h2>🗺️ Ойлголтын зураглал</h2>
+  <table class="tbl"><thead><tr><th>Хичээл</th><th>Гол ойлголт</th></tr></thead><tbody><tr><td class="t-time">1–2</td><td>print, хувьсагч, input, f-string</td></tr><tr><td class="t-time">3–4</td><td>if / elif / else, логик утга</td></tr><tr><td class="t-time">5</td><td>while давталт</td></tr><tr><td class="t-time">6</td><td>давталтыг анзаарах (бэлтгэл)</td></tr><tr><td class="t-time">7–8</td><td>функц, параметр, return, toolbox</td></tr><tr><td class="t-time">9</td><td>жагсаалт (list), for</td></tr><tr><td class="t-time">10</td><td>толь бичиг (dict)</td></tr><tr><td class="t-time">11</td><td><b>хийсвэрлэл — play_scene()</b></td></tr><tr><td class="t-time">12–13</td><td>өгөгдөл-удирдлагатай хэсгүүд</td></tr><tr><td class="t-time">14</td><td><b>логик оньсого</b></td></tr><tr><td class="t-time">15–16</td><td>дуусгах, дибаг, бүтээл</td></tr></tbody></table>
+</section>
+<section class="card">
+  <h2>📁 Файлын бүтэц</h2>
+  <table class="tbl"><tbody><tr><td><code>toolbox.py</code></td><td>Багшаас бэлэн өгсөн (сурагчид зөвхөн дуудаж хэрэглэнэ)</td></tr><tr><td><code>namjil.py</code></td><td>Сурагчдын 16 хичээлийн турш бүтээх тоглоом</td></tr><tr><td><code>tale.md</code></td><td>Эх үлгэр (унших, сэдэвжүүлэх материал)</td></tr><tr><td><code>curriculum.md</code></td><td>Сургалтын төлөвлөгөө</td></tr></tbody></table>
+</section>
+<section class="card">
+  <h2>📊 Үнэлгээний санаа (гэрийн даалгаваргүй)</h2>
+  <ul class="tips"><li><b>Явцын ажиглалт:</b> Хичээл бүрийн дасгал гүйцэтгэлийг хосын ажлаар үнэлэх.</li><li><b>Жижиг шалгалт (хичээл дээр):</b> «Энэ код юу хэвлэх вэ?» гэсэн 3–4 асуулт.</li><li><b>Эцсийн төсөл:</b> Ажиллаж байгаа тоглоом + сурагч өөрийн нэг хэсгийг тайлбарлах.</li></ul>
+</section>
+<div class="cta-row">
+  <a class="cta" href="lesson-1.html">1-р хичээлээс эхлэх →</a>
+</div>
+</div></main>
+<script>
+function copyCode(btn){
+  const code = btn.closest('.codecard').querySelector('code').innerText;
+  navigator.clipboard.writeText(code).then(function(){
+    const old = btn.textContent;
+    btn.textContent = 'Хуулсан ✓';
+    btn.classList.add('copied');
+    setTimeout(function(){ btn.textContent = old; btn.classList.remove('copied'); }, 1500);
+  });
+}
+// Цэс гадна дарвал хаах (мобайл)
+document.addEventListener('click', function(e){
+  const sb = document.getElementById('sidebar');
+  if(!sb) return;
+  if(window.innerWidth <= 900 && sb.classList.contains('open')){
+    if(!sb.contains(e.target) && !e.target.classList.contains('menu-btn')){
+      sb.classList.remove('open');
+    }
+  }
+});
+</script>
+</body></html>

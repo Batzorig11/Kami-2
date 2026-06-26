@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>8-р хичээл: Параметр ба буцаах утга (return) — Царцаа Намжил</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<aside class="sidebar" id="sidebar">
+  <div class="brand">
+    <div class="brand-icon">🦗</div>
+    <div>
+      <div class="brand-title">Царцаа Намжил</div>
+      <div class="brand-sub">Python сургалт</div>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-home">🏠 Нүүр хуудас</a><div class="nav-section">Хичээлүүд</div><a href="lesson-1.html" class="nav-lesson"><span class="nav-num">1</span><span class="nav-title">Python-той танилцах</span></a><a href="lesson-2.html" class="nav-lesson"><span class="nav-num">2</span><span class="nav-title">Хувьсагч ба оролт</span></a><a href="lesson-3.html" class="nav-lesson"><span class="nav-num">3</span><span class="nav-title">Шийдвэр гаргах (if / elif / else)</span></a><a href="lesson-4.html" class="nav-lesson"><span class="nav-num">4</span><span class="nav-title">Логик утга ба ЭХНИЙ хэсэг</span></a><a href="lesson-5.html" class="nav-lesson"><span class="nav-num">5</span><span class="nav-title">while давталт — оролтыг шалгах</span></a><a href="lesson-6.html" class="nav-lesson"><span class="nav-num">6</span><span class="nav-title">Хоёр дахь хэсэг — давталтыг мэдрэх</span></a><a href="lesson-7.html" class="nav-lesson"><span class="nav-num">7</span><span class="nav-title">Функц — давталтыг багцлах</span></a><a href="lesson-8.html" class="nav-lesson active"><span class="nav-num">8</span><span class="nav-title">Параметр ба буцаах утга (return)</span></a><a href="lesson-9.html" class="nav-lesson"><span class="nav-num">9</span><span class="nav-title">Жагсаалт (list) ба for давталт</span></a><a href="lesson-10.html" class="nav-lesson"><span class="nav-num">10</span><span class="nav-title">Толь бичиг (dict)</span></a><a href="lesson-11.html" class="nav-lesson"><span class="nav-num">11</span><span class="nav-title">ЕРӨНХИЙ ХӨДӨЛГҮҮР — play_scene() <span class="peak-dot" title="Хүндрэлийн оргил">⭐</span></span></a><a href="lesson-12.html" class="nav-lesson"><span class="nav-num">12</span><span class="nav-title">SCENES жагсаалт + main давталт</span></a><a href="lesson-13.html" class="nav-lesson"><span class="nav-num">13</span><span class="nav-title">Толгой самбар + сурсан тарниуд (5–6 хэсэг)</span></a><a href="lesson-14.html" class="nav-lesson"><span class="nav-num">14</span><span class="nav-title">Шөнийн оньсого (7–9 хэсэг) <span class="peak-dot" title="Хүндрэлийн оргил">⭐</span></span></a><a href="lesson-15.html" class="nav-lesson"><span class="nav-num">15</span><span class="nav-title">Төгсгөлийн хэсгүүд (10–12) + дэлгэцүүд</span></a><a href="lesson-16.html" class="nav-lesson"><span class="nav-num">16</span><span class="nav-title">Бүрэн туршилт, алдаа засах, ТОГЛООМЫН ӨДӨР</span></a>
+  </nav>
+</aside>
+<main class="content">
+<header class="topbar">
+  <button class="menu-btn" onclick="document.getElementById('sidebar').classList.toggle('open')" aria-label="Цэс">☰</button>
+  <div class="crumb"><a href="index.html">Нүүр</a> › 8-р хичээл</div>
+</header>
+<div class="page">
+<div class="lesson-hero">
+  <div class="lesson-eyebrow">8-р хичээл / 16 </div>
+  <h1>Параметр ба буцаах утга (return)</h1>
+</div>
+<section class="callout goal">
+  <div class="callout-label">🎯 Зорилго</div>
+  <p>Функцэд утга дамжуулж (параметр), функцээс утга буцаахыг (<code>return</code>) сурах.</p>
+</section>
+<section class="card">
+  <h2>📘 Шинэ ойлголт</h2>
+  <p>Параметр (<code>def f(x):</code>), <code>return</code>, буцаасан утгыг хувьсагчид авах.</p>
+</section>
+<section class="card">
+  <h2>💡 Тайлбар</h2>
+  <p>Функцэд <b>оролт</b> өгч болно — үүнийг <b>параметр</b> гэнэ (<code>def ask_number(count):</code> дэх <code>count</code>). Функц мөн <b>хариу буцааж</b> болно — <code>return</code> түлхүүр үг ашиглана. Буцаасан утгыг хувьсагчид авч ашиглана: <code>pick = ask_number(2)</code>. Өнөөдөр бид 5-р хичээлийн «зөв тоо асуух» давталтыг <code>ask_number(count)</code> функц болгож, тоглоомын аль ч хэсэгт дахин ашиглаж болохоор болгоно.</p>
+</section>
+<section class="card">
+  <h2>✍️ Дасгал (хичээл дээр)</h2>
+  <ol class="exercises"><li><code>ask_number(count)</code> функц бичих — 1..count хүртэлх зөв дугаар буцаана (5-р хичээлийн давталтыг функц болгох).</li><li>Функц <code>True</code>/<code>False</code> буцаадгийг туршиж үзэх.</li><li><code>ask_number</code>-г хэсгүүддээ ашиглах.</li></ol>
+</section>
+<section class="card">
+  <h2>💻 Гарах код — <code>namjil.py</code></h2>
+  <div class="codecard">
+  <div class="code-head">
+    <span class="code-file">namjil.py</span>
+    <button class="copy-btn" onclick="copyCode(this)">Хуулах</button>
+  </div>
+  <pre class="code-body"><code><span class="c-kw">def</span> <span class="c-fn">ask_number</span>(count):
+    <span class="c-str">&quot;&quot;&quot;1-ээс count хүртэлх ЗӨВ дугаар авах хүртэл асууна.&quot;&quot;&quot;</span>
+    <span class="c-kw">while</span> <span class="c-kw">True</span>:
+        answer = <span class="c-fn">ask</span>(<span class="c-str">&quot;  Чиний сонголт (дугаар): &quot;</span>)
+        <span class="c-kw">if</span> answer.<span class="c-fn">isdigit</span>():
+            number = <span class="c-fn">int</span>(answer)
+            <span class="c-kw">if</span> <span class="c-num">1</span> &lt;= number &lt;= count:
+                <span class="c-kw">return</span> number
+        <span class="c-fn">print</span>(<span class="c-fn">color</span>(<span class="c-str">&quot;  1-ээс &quot;</span> + <span class="c-fn">str</span>(count) + <span class="c-str">&quot; хүртэлх дугаар бичнэ үү.&quot;</span>, <span class="c-str">&quot;red&quot;</span>))</code></pre>
+</div>
+</section>
+<section class="callout nocomp">
+  <div class="callout-label">📝 Компьютергүй сурагчид</div>
+  <p>«Машин» тоглоом — оролт өгөхөд гаралт буцаадаг хүн-машин. Параметр болон буцаах утгыг биеэр дүрслэх.</p>
+</section>
+<section class="callout recap">
+  <div class="callout-label">✅ Дүгнэлт — өнөөдөр юу сурсан</div>
+  <p>Параметр = функцэд өгөх оролт. <code>return</code> = функцээс хариу буцаах. <code>ask_number(count)</code> нэг удаа бичээд хаа сайгүй дуудна.</p>
+</section>
+<nav class="pager-row"><a class="pager prev" href="lesson-7.html"><span class="pager-dir">← Өмнөх</span><span class="pager-name">7. Функц — давталтыг багцлах</span></a><a class="pager next" href="lesson-9.html"><span class="pager-dir">Дараах →</span><span class="pager-name">9. Жагсаалт (list) ба for давталт</span></a></nav>
+</div></main>
+<script>
+function copyCode(btn){
+  const code = btn.closest('.codecard').querySelector('code').innerText;
+  navigator.clipboard.writeText(code).then(function(){
+    const old = btn.textContent;
+    btn.textContent = 'Хуулсан ✓';
+    btn.classList.add('copied');
+    setTimeout(function(){ btn.textContent = old; btn.classList.remove('copied'); }, 1500);
+  });
+}
+// Цэс гадна дарвал хаах (мобайл)
+document.addEventListener('click', function(e){
+  const sb = document.getElementById('sidebar');
+  if(!sb) return;
+  if(window.innerWidth <= 900 && sb.classList.contains('open')){
+    if(!sb.contains(e.target) && !e.target.classList.contains('menu-btn')){
+      sb.classList.remove('open');
+    }
+  }
+});
+</script>
+</body></html>

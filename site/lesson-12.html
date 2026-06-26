@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>12-р хичээл: SCENES жагсаалт + main давталт — Царцаа Намжил</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<aside class="sidebar" id="sidebar">
+  <div class="brand">
+    <div class="brand-icon">🦗</div>
+    <div>
+      <div class="brand-title">Царцаа Намжил</div>
+      <div class="brand-sub">Python сургалт</div>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-home">🏠 Нүүр хуудас</a><div class="nav-section">Хичээлүүд</div><a href="lesson-1.html" class="nav-lesson"><span class="nav-num">1</span><span class="nav-title">Python-той танилцах</span></a><a href="lesson-2.html" class="nav-lesson"><span class="nav-num">2</span><span class="nav-title">Хувьсагч ба оролт</span></a><a href="lesson-3.html" class="nav-lesson"><span class="nav-num">3</span><span class="nav-title">Шийдвэр гаргах (if / elif / else)</span></a><a href="lesson-4.html" class="nav-lesson"><span class="nav-num">4</span><span class="nav-title">Логик утга ба ЭХНИЙ хэсэг</span></a><a href="lesson-5.html" class="nav-lesson"><span class="nav-num">5</span><span class="nav-title">while давталт — оролтыг шалгах</span></a><a href="lesson-6.html" class="nav-lesson"><span class="nav-num">6</span><span class="nav-title">Хоёр дахь хэсэг — давталтыг мэдрэх</span></a><a href="lesson-7.html" class="nav-lesson"><span class="nav-num">7</span><span class="nav-title">Функц — давталтыг багцлах</span></a><a href="lesson-8.html" class="nav-lesson"><span class="nav-num">8</span><span class="nav-title">Параметр ба буцаах утга (return)</span></a><a href="lesson-9.html" class="nav-lesson"><span class="nav-num">9</span><span class="nav-title">Жагсаалт (list) ба for давталт</span></a><a href="lesson-10.html" class="nav-lesson"><span class="nav-num">10</span><span class="nav-title">Толь бичиг (dict)</span></a><a href="lesson-11.html" class="nav-lesson"><span class="nav-num">11</span><span class="nav-title">ЕРӨНХИЙ ХӨДӨЛГҮҮР — play_scene() <span class="peak-dot" title="Хүндрэлийн оргил">⭐</span></span></a><a href="lesson-12.html" class="nav-lesson active"><span class="nav-num">12</span><span class="nav-title">SCENES жагсаалт + main давталт</span></a><a href="lesson-13.html" class="nav-lesson"><span class="nav-num">13</span><span class="nav-title">Толгой самбар + сурсан тарниуд (5–6 хэсэг)</span></a><a href="lesson-14.html" class="nav-lesson"><span class="nav-num">14</span><span class="nav-title">Шөнийн оньсого (7–9 хэсэг) <span class="peak-dot" title="Хүндрэлийн оргил">⭐</span></span></a><a href="lesson-15.html" class="nav-lesson"><span class="nav-num">15</span><span class="nav-title">Төгсгөлийн хэсгүүд (10–12) + дэлгэцүүд</span></a><a href="lesson-16.html" class="nav-lesson"><span class="nav-num">16</span><span class="nav-title">Бүрэн туршилт, алдаа засах, ТОГЛООМЫН ӨДӨР</span></a>
+  </nav>
+</aside>
+<main class="content">
+<header class="topbar">
+  <button class="menu-btn" onclick="document.getElementById('sidebar').classList.toggle('open')" aria-label="Цэс">☰</button>
+  <div class="crumb"><a href="index.html">Нүүр</a> › 12-р хичээл</div>
+</header>
+<div class="page">
+<div class="lesson-hero">
+  <div class="lesson-eyebrow">12-р хичээл / 16 </div>
+  <h1>SCENES жагсаалт + main давталт</h1>
+</div>
+<section class="callout goal">
+  <div class="callout-label">🎯 Зорилго</div>
+  <p>Хэсгүүдийг өгөгдлийн жагсаалт болгож, <code>main()</code>-ээр дараалан тоглуулах.</p>
+</section>
+<section class="card">
+  <h2>📘 Шинэ ойлголт</h2>
+  <p>Толь бичгүүдийн жагсаалт (<code>SCENES = [ {...}, {...} ]</code>), жагсаалтыг <code>for</code>-оор дамжих, <code>player["stage"]</code> шинэчлэх.</p>
+</section>
+<section class="card">
+  <h2>💡 Тайлбар</h2>
+  <p>Бид <code>play_scene()</code>-тэй болсон тул хэсгүүдээ зүгээр л <b>өгөгдлийн жагсаалт</b> болгож хадгалахад л болно: <code>SCENES = [ {...}, {...} ]</code>. <code>main()</code> функц нь <code>for</code>-оор бүх хэсгийг дараалан гүйж, тус бүрийг <code>play_scene()</code>-д өгнө. Хэрэв <code>play_scene</code> <code>False</code> буцаавал (тоглогч үхсэн) тоглоомыг зогсооно. Шинэ хэсэг нэмэхэд зөвхөн <code>SCENES</code>-д нэг толь бичиг нэмэхэд л хангалттай!</p>
+</section>
+<section class="card">
+  <h2>✍️ Дасгал (хичээл дээр)</h2>
+  <ol class="exercises"><li>1–4-р хэсгийг (Хийд, Шувуу, Зээр, Хулгана) толь бичиг болгож <code>SCENES</code>-д нэмэх.</li><li><code>main()</code> бичиж бүх хэсгийг дараалан тоглуулах.</li><li><code>play_scene</code> <code>False</code> буцаавал тоглоомыг зогсоох.</li></ol>
+</section>
+<section class="card">
+  <h2>💻 Гарах код — <code>namjil.py</code></h2>
+  <div class="codecard">
+  <div class="code-head">
+    <span class="code-file">namjil.py</span>
+    <button class="copy-btn" onclick="copyCode(this)">Хуулах</button>
+  </div>
+  <pre class="code-body"><code>SCENES = [
+    { <span class="c-str">&quot;title&quot;</span>: <span class="c-str">&quot;1-р хэсэг: Хийдэд&quot;</span>, ... },
+    { <span class="c-str">&quot;title&quot;</span>: <span class="c-str">&quot;2-р хэсэг: Хар шувуу&quot;</span>, ... },
+    { <span class="c-str">&quot;title&quot;</span>: <span class="c-str">&quot;3-р хэсэг: Хоёр зээр&quot;</span>, ... },
+    { <span class="c-str">&quot;title&quot;</span>: <span class="c-str">&quot;4-р хэсэг: Хоёр хулгана&quot;</span>, ... },
+]
+
+<span class="c-kw">def</span> <span class="c-fn">main</span>():
+    number = <span class="c-num">1</span>
+    <span class="c-kw">for</span> scene <span class="c-kw">in</span> SCENES:
+        player[<span class="c-str">&quot;stage&quot;</span>] = number
+        <span class="c-kw">if</span> <span class="c-kw">not</span> <span class="c-fn">play_scene</span>(scene):
+            <span class="c-fn">print</span>(<span class="c-str">&quot;Аялал тасарлаа.&quot;</span>)
+            <span class="c-kw">return</span>
+        number = number + <span class="c-num">1</span>
+    <span class="c-fn">print</span>(<span class="c-str">&quot;Чи яллаа!&quot;</span>)</code></pre>
+</div>
+</section>
+<section class="callout nocomp">
+  <div class="callout-label">📝 Компьютергүй сурагчид</div>
+  <p>Дөрвөн хэсгийн текстийг <b>зохиох</b> баг даалгавар — кодоо бичих сурагчдад «өгөгдөл» болгон өгнө (бичих хүн ба зохиох хүний хамтын ажил).</p>
+</section>
+<section class="callout recap">
+  <div class="callout-label">✅ Дүгнэлт — өнөөдөр юу сурсан</div>
+  <p><code>SCENES</code> = хэсгүүдийн өгөгдлийн жагсаалт. <code>main()</code> тэдгээрийг дараалан тоглуулна. Шинэ хэсэг = шинэ толь бичиг нэмэх.</p>
+</section>
+<nav class="pager-row"><a class="pager prev" href="lesson-11.html"><span class="pager-dir">← Өмнөх</span><span class="pager-name">11. ЕРӨНХИЙ ХӨДӨЛГҮҮР — play_scene()</span></a><a class="pager next" href="lesson-13.html"><span class="pager-dir">Дараах →</span><span class="pager-name">13. Толгой самбар + сурсан тарниуд (5–6 хэсэг)</span></a></nav>
+</div></main>
+<script>
+function copyCode(btn){
+  const code = btn.closest('.codecard').querySelector('code').innerText;
+  navigator.clipboard.writeText(code).then(function(){
+    const old = btn.textContent;
+    btn.textContent = 'Хуулсан ✓';
+    btn.classList.add('copied');
+    setTimeout(function(){ btn.textContent = old; btn.classList.remove('copied'); }, 1500);
+  });
+}
+// Цэс гадна дарвал хаах (мобайл)
+document.addEventListener('click', function(e){
+  const sb = document.getElementById('sidebar');
+  if(!sb) return;
+  if(window.innerWidth <= 900 && sb.classList.contains('open')){
+    if(!sb.contains(e.target) && !e.target.classList.contains('menu-btn')){
+      sb.classList.remove('open');
+    }
+  }
+});
+</script>
+</body></html>
